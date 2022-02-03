@@ -4,7 +4,7 @@ import java.awt.event.*;
 
 object Netfix_Antivirus_Activation
 {
-   def createUI()=
+   def createUI()
    {
       final val f : JFrame = new JFrame("Netfix Activation");
       f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -47,21 +47,21 @@ object Netfix_Antivirus_Activation
       close.addMouseListener(new MouseAdapter()
       {
        @Override
-       def mouseEntered(e : MouseEvent)=
+       def mouseEntered(e : MouseEvent)
        {
           super.mouseEntered(e);
           close.setFont(new Font("Arial", Font.BOLD, 14));
           close.setForeground(Color.YELLOW);
        }
        @Override
-       def mouseExited(e : MouseEvent)=
+       def mouseExited(e : MouseEvent)
        {
           super.mouseExited(e);
           close.setFont(new Font("Arial", Font.BOLD, 12));
           close.setForeground(Color.WHITE);
        }
        @Override
-       def mouseClicked(e : MouseEvent)=
+       def mouseClicked(e : MouseEvent)
        {
            super.mouseClicked(e);
            f.dispose();
@@ -101,7 +101,7 @@ object Netfix_Antivirus_Activation
       f.add(pane);
       f.setVisible(true);
    }
-  def main(args : String)=
+  def main(args : String)
   {
      try{
       Netfix_Antivirus_Activation.createUI();
