@@ -1,6 +1,4 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+
 
 object Netfix_Antivirus_Activation
 {
