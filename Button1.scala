@@ -9,14 +9,14 @@ class Button1 extends JButton
        this.addMouseListener(new MouseAdapter()
       {
        @Override
-       def mouseEntered(e : MouseEvent)
+       def mouseEntered(e : MouseEvent)=
        {
           super.mouseEntered(e);
           font =  new Font("Calibri", Font.BOLD, 14);
           repaint();
        }
        @Override
-       def mouseExited(e : MouseEvent)
+       def mouseExited(e : MouseEvent)=
        {
           super.mouseExited(e);
           font = new Font("Arial", Font.BOLD, 12);
@@ -25,7 +25,7 @@ class Button1 extends JButton
     });
   }
     @Override
- def paintComponent(g : Graphics)
+ def paintComponent(g : Graphics)=
  {
      val g2 : Graphica2D = (Graphics2D)g;
       g2.setPaint(new GradientPaint(getWidth(), getHeight()/2, new Color(41, 0, 0),
