@@ -8,7 +8,7 @@ class Pane1 extends JPanel
         this.title = title;
     }
     @Override
- def paintComponent(g : Graphics)
+ def paintComponent(g : Graphics)=
  {
      super.paintComponent(g);
      val g2 :Graphics2D = (Graphics2D)g;
